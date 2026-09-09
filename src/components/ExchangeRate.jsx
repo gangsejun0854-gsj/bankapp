@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 function ExchangeRate() {
   const [rate, setRate] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -21,3 +23,5 @@ function ExchangeRate() {
   if (error) return <p className="muted">환율을 못 불러왔습니다</p>;
   return <p>1달러 = {Math.round(rate).toLocaleString("ko-KR")}원</p>;
 }
+
+export default ExchangeRate;

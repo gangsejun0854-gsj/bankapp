@@ -1,6 +1,5 @@
 import { formatWon } from "../utils/format";
 
-
 function TransactionRow({
   txType,
   amount,
